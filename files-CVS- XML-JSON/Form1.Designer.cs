@@ -28,48 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            BtnCSVCreate = new Button();
-            BtnXMLCreate = new Button();
-            BtnJSONCreate = new Button();
+            BtnCreate = new Button();
             LblSelectFile = new Label();
             LstbxShowData = new ListBox();
-            BtnOpenCSV = new Button();
-            BtnSaveCSV = new Button();
-            BtnOpenXML = new Button();
-            BtnSaveXML = new Button();
-            BtnOpenJSON = new Button();
-            BtnSaveJSON = new Button();
+            BtnOpen = new Button();
+            BtnSave = new Button();
+            ComboxSeleciont = new ComboBox();
             SuspendLayout();
             // 
-            // BtnCSVCreate
+            // BtnCreate
             // 
-            BtnCSVCreate.Location = new Point(44, 41);
-            BtnCSVCreate.Name = "BtnCSVCreate";
-            BtnCSVCreate.Size = new Size(85, 62);
-            BtnCSVCreate.TabIndex = 0;
-            BtnCSVCreate.Text = "Create CSV";
-            BtnCSVCreate.UseVisualStyleBackColor = true;
-            BtnCSVCreate.Click += BtnCVSCreate_Click;
-            // 
-            // BtnXMLCreate
-            // 
-            BtnXMLCreate.Location = new Point(44, 164);
-            BtnXMLCreate.Name = "BtnXMLCreate";
-            BtnXMLCreate.Size = new Size(85, 62);
-            BtnXMLCreate.TabIndex = 1;
-            BtnXMLCreate.Text = "Create XML ";
-            BtnXMLCreate.UseVisualStyleBackColor = true;
-            BtnXMLCreate.Click += BtnXMLCreate_Click;
-            // 
-            // BtnJSONCreate
-            // 
-            BtnJSONCreate.Location = new Point(44, 294);
-            BtnJSONCreate.Name = "BtnJSONCreate";
-            BtnJSONCreate.Size = new Size(85, 62);
-            BtnJSONCreate.TabIndex = 2;
-            BtnJSONCreate.Text = "Create JSON ";
-            BtnJSONCreate.UseVisualStyleBackColor = true;
-            BtnJSONCreate.Click += BtnJSONCreate_Click;
+            BtnCreate.Location = new Point(70, 132);
+            BtnCreate.Name = "BtnCreate";
+            BtnCreate.Size = new Size(85, 62);
+            BtnCreate.TabIndex = 0;
+            BtnCreate.Text = "Create";
+            BtnCreate.UseVisualStyleBackColor = true;
+            BtnCreate.Click += BtnCreate_Click;
             // 
             // LblSelectFile
             // 
@@ -83,87 +58,52 @@
             // 
             LstbxShowData.FormattingEnabled = true;
             LstbxShowData.ItemHeight = 15;
-            LstbxShowData.Location = new Point(387, 41);
+            LstbxShowData.Location = new Point(237, 12);
             LstbxShowData.Name = "LstbxShowData";
             LstbxShowData.Size = new Size(428, 454);
             LstbxShowData.TabIndex = 4;
             // 
-            // BtnOpenCSV
+            // BtnOpen
             // 
-            BtnOpenCSV.Location = new Point(147, 41);
-            BtnOpenCSV.Name = "BtnOpenCSV";
-            BtnOpenCSV.Size = new Size(90, 62);
-            BtnOpenCSV.TabIndex = 5;
-            BtnOpenCSV.Text = "Open CSV";
-            BtnOpenCSV.UseVisualStyleBackColor = true;
-            BtnOpenCSV.Click += BtnOpenCSV_Click;
+            BtnOpen.Location = new Point(65, 232);
+            BtnOpen.Name = "BtnOpen";
+            BtnOpen.Size = new Size(90, 62);
+            BtnOpen.TabIndex = 5;
+            BtnOpen.Text = "Open";
+            BtnOpen.UseVisualStyleBackColor = true;
+            BtnOpen.Click += BtnOpen_Click;
             // 
-            // BtnSaveCSV
+            // BtnSave
             // 
-            BtnSaveCSV.Location = new Point(258, 41);
-            BtnSaveCSV.Name = "BtnSaveCSV";
-            BtnSaveCSV.Size = new Size(90, 62);
-            BtnSaveCSV.TabIndex = 6;
-            BtnSaveCSV.Text = "Save CSV";
-            BtnSaveCSV.UseVisualStyleBackColor = true;
-            BtnSaveCSV.Click += BtnSaveCSV_Click;
+            BtnSave.Location = new Point(65, 329);
+            BtnSave.Name = "BtnSave";
+            BtnSave.Size = new Size(90, 62);
+            BtnSave.TabIndex = 6;
+            BtnSave.Text = "Save";
+            BtnSave.UseVisualStyleBackColor = true;
+            BtnSave.Click += BtnSave_Click;
             // 
-            // BtnOpenXML
+            // ComboxSeleciont
             // 
-            BtnOpenXML.Location = new Point(152, 164);
-            BtnOpenXML.Name = "BtnOpenXML";
-            BtnOpenXML.Size = new Size(85, 62);
-            BtnOpenXML.TabIndex = 7;
-            BtnOpenXML.Text = "Open XML";
-            BtnOpenXML.UseVisualStyleBackColor = true;
-            BtnOpenXML.Click += BtnOpenXML_Click;
-            // 
-            // BtnSaveXML
-            // 
-            BtnSaveXML.Location = new Point(263, 164);
-            BtnSaveXML.Name = "BtnSaveXML";
-            BtnSaveXML.Size = new Size(85, 62);
-            BtnSaveXML.TabIndex = 8;
-            BtnSaveXML.Text = "Create XML ";
-            BtnSaveXML.UseVisualStyleBackColor = true;
-            BtnSaveXML.Click += BtnSaveXML_Click;
-            // 
-            // BtnOpenJSON
-            // 
-            BtnOpenJSON.Location = new Point(152, 294);
-            BtnOpenJSON.Name = "BtnOpenJSON";
-            BtnOpenJSON.Size = new Size(85, 62);
-            BtnOpenJSON.TabIndex = 9;
-            BtnOpenJSON.Text = "Open JSON";
-            BtnOpenJSON.UseVisualStyleBackColor = true;
-            BtnOpenJSON.Click += BtnOpenJSON_Click;
-            // 
-            // BtnSaveJSON
-            // 
-            BtnSaveJSON.Location = new Point(263, 294);
-            BtnSaveJSON.Name = "BtnSaveJSON";
-            BtnSaveJSON.Size = new Size(85, 62);
-            BtnSaveJSON.TabIndex = 10;
-            BtnSaveJSON.Text = "Save JSON";
-            BtnSaveJSON.UseVisualStyleBackColor = true;
-            BtnSaveJSON.Click += BtnSaveJSON_Click;
+            ComboxSeleciont.DropDownStyle = ComboBoxStyle.DropDownList;
+            ComboxSeleciont.FormattingEnabled = true;
+            ComboxSeleciont.Items.AddRange(new object[] { "CVS", "XML", "JASON" });
+            ComboxSeleciont.Location = new Point(55, 41);
+            ComboxSeleciont.Name = "ComboxSeleciont";
+            ComboxSeleciont.Size = new Size(121, 23);
+            ComboxSeleciont.TabIndex = 7;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(855, 520);
-            Controls.Add(BtnSaveJSON);
-            Controls.Add(BtnOpenJSON);
-            Controls.Add(BtnSaveXML);
-            Controls.Add(BtnOpenXML);
-            Controls.Add(BtnSaveCSV);
-            Controls.Add(BtnOpenCSV);
+            ClientSize = new Size(712, 517);
+            Controls.Add(ComboxSeleciont);
+            Controls.Add(BtnSave);
+            Controls.Add(BtnOpen);
             Controls.Add(LstbxShowData);
             Controls.Add(LblSelectFile);
-            Controls.Add(BtnJSONCreate);
-            Controls.Add(BtnXMLCreate);
-            Controls.Add(BtnCSVCreate);
+            Controls.Add(BtnCreate);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -172,16 +112,11 @@
 
         #endregion
 
-        private Button BtnCSVCreate;
-        private Button BtnXMLCreate;
-        private Button BtnJSONCreate;
+        private Button BtnCreate;
         private Label LblSelectFile;
         private ListBox LstbxShowData;
-        private Button BtnOpenCSV;
-        private Button BtnSaveCSV;
-        private Button BtnOpenXML;
-        private Button BtnSaveXML;
-        private Button BtnOpenJSON;
-        private Button BtnSaveJSON;
+        private Button BtnOpen;
+        private Button BtnSave;
+        private ComboBox ComboxSeleciont;
     }
 }
